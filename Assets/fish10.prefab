@@ -98,8 +98,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4050c3ecca1a42a418d9d7d57c772ddf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 30
-  smooth: 20
+  moveSpeed: 2
+  smooth: 4
   waveHeight: 0.3
   waveSpeed: 6
   killX: 8

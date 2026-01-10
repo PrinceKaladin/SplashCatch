@@ -30,22 +30,16 @@ public class FishMover : MonoBehaviour
 
     void Update()
     {
-        // движение по X
         Vector3 pos = transform.position;
         pos.x += dir * moveSpeed * Time.deltaTime;
 
-        // волна по Y
         float wave = Mathf.Sin(Time.time * waveSpeed) * waveHeight;
         pos.y = startPos.y + wave;
 
-        // плавность
-        transform.position = Vector3.Lerp(
-            transform.position,
-            pos,
-            Time.deltaTime * smooth
-        );
+        transform.position = pos;
 
         if (dir == 1 && transform.position.x > killX) Destroy(gameObject);
         if (dir == -1 && transform.position.x < -killX) Destroy(gameObject);
     }
+
 }
