@@ -1,0 +1,12 @@
+Splash Catch
+com.SplashCatchCorp.SplashCatch
+
+alias: splash
+password: splash
+alias-password: splash
+
+
+
+
+https://docs.google.com/document/d/13ZdYnkguf__RNgyTJo3UhQ30W7it2QTdg2HRpxxe0is/edit?usp=sharing
+https://www.figma.com/design/ni924xllnCg3fKAO3f5jcL/Splash-Catch?node-id=5-178112
