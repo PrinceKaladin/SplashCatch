@@ -21,6 +21,16 @@ public class buttonmanager : MonoBehaviour
                 this.GetComponent<Image>().sprite = off;
             }
         }
+
+        else {
+
+            if (PlayerPrefs.GetInt("vibro", 1) == 1) {
+                this.GetComponent<Image>().sprite = on;
+            }
+            if (PlayerPrefs.GetInt("viro") == 0) {
+                this.GetComponent<Image>().sprite = off;
+            }
+        }
     }
     public void MusicOnOff()
     {
@@ -42,11 +52,13 @@ public class buttonmanager : MonoBehaviour
     {
         if (this.GetComponent<Image>().sprite == off)
         {
-          
+            PlayerPrefs.SetInt("viro",1);
             this.GetComponent<Image>().sprite = on;
         }
         else
         {
+            PlayerPrefs.SetInt("viro", 0);
+
             this.GetComponent<Image>().sprite = off;
 
         }

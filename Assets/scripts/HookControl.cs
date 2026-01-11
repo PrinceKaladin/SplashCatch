@@ -137,6 +137,9 @@ public class HookControl : MonoBehaviour
     // ================= COLLISIONS =================
     void OnTriggerEnter2D(Collider2D other)
     {
+        if (PlayerPrefs.GetInt("viro", 1) == 1) {
+            Handheld.Vibrate();
+        }
         if (GameManager.I != null && GameManager.I.IsGameOver)
             return;
 
